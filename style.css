@@ -42,7 +42,7 @@ main{
     font-size: 12px;
 }
 
-.encriptador{
+.btn-primario{
     
     padding: 24px;
     gap: 8px;
@@ -62,7 +62,7 @@ main{
     transition: 1s all;
 }
 
-.desencriptador{
+.btn-secundario{
     
     padding: 24px;
     gap: 8px;
@@ -81,13 +81,13 @@ main{
     transition: 1s all;
 }
 
-.encriptador:hover{
+.btn-primario:hover{
     background: #D8DFE8;
     color: #0A3871;
     border: 1px solid #0A3871;
 }
 
-.desencriptador:hover{
+.btn-secundario:hover{
     background: #0A3871;
     color: white;
     border: none;
@@ -126,6 +126,20 @@ main{
     font-size: 16px;
     color: #495057;
     text-align: center;
+}
+
+#btn-copiar{
+    width: 100%;
+}
+
+footer{
+    padding: 40px;
+    background: #d7e4f1;
+}
+
+footer p {
+    text-align: center;
+    color: #465e7c;
 }
 
 
