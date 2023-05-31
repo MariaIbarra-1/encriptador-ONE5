@@ -17,13 +17,9 @@
 
     <body>
 
-        
-            
-        
-        <img class="logo" src="imagenes/Logo.png" alt="logo">
-        
 
         <main>
+            <img class="logo" src="imagenes/Logo.png" alt="logo">
             <section class="seccion-principal">
                 <textarea name="encriptador" class="input-texto" placeholder="Ingrese el texto aqui"></textarea>
 
@@ -32,26 +28,31 @@
                 </div>
 
                 <div class="botones">
-                    <button class="encriptador">Encriptar</button>
-                    <button class="desencriptador">Desencriptar</button>
+                    <button id="btn-encriptar" class="btn-primario">Encriptar</button>
+                    <button id="btn-desencriptar" class="btn-secundario">Desencriptar</button>
 
                 </div>
             </section>
             
             <section class="seccion-resultado">
-                    <img src="imagenes/Muñeco-mediano.png" alt="muñeco">
+                    
                     <div class="mensaje">
-                        <p class="no-encontrado">Ninguna clase fue encotrado</p>
-                        <p class="instrucciones">Ingresa el texto que desea encriptar o desencriptar</p>
+                        <img id="img-muñeco" src="imagenes/Muñeco-mediano.png" alt="muñeco">
+                        <p class="no-encontrado">Ningún mensaje fue encotrado</p>
+                        <p class="instrucciones">Ingresa el texto que desea encriptar o desencriptar </p>
                     </div>
+
+                    <p class="resultado">Este es un resultado</p>
+                    <button id="btn-copiar" class="btn-secundario">Copiar</button>
+                    
             </section>
         </main>
        
 
         <footer>
-            
+            <p>&copy María Macarena Ibarra</p>
         </footer>
 
     </body>
-
+    <script src="./main.js"></script>
 </html>
