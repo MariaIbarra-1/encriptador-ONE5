@@ -5,7 +5,7 @@ const mensaje_resultado = document.getElementsByClassName("mensaje");
 const resultado = document.getElementsByClassName("resultado");
 const btn_copiar = document.getElementById("btn-copiar");
 const texto_encriptado=document.getElementsByClassName("resultado");
-const patron = /^[a-z0-9]+$/;
+const patron = /^[a-z0-9 ?]+$/;
 
 encriptar.addEventListener("click", (e) => {
     e.preventDefault();
