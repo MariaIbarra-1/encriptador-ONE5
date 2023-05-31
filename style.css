@@ -42,6 +42,7 @@ main{
     font-size: 12px;
 }
 
+
 .btn-primario{
     
     padding: 24px;
@@ -94,12 +95,9 @@ main{
 }
 
 .seccion-resultado{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
+    position: relative;
     margin: 2.78% 2em;
-    width: auto;
+    width: 60vh;
     height: 75vh;
     padding: 2em;
     background: white;
@@ -109,10 +107,9 @@ main{
 
 
 .mensaje{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    position: inherit;
+    top: 50%;
+    transform: translate(0, -50%);
 }
 
 .no-encontrado{
@@ -127,11 +124,20 @@ main{
     font-size: 16px;
     color: #495057;
     text-align: center;
+    margin: 2em;
+}
+
+.resultado{
+    display: none;
+    vertical-align: top;
 }
 
 #btn-copiar{
-    width: 100%;
+    display: none;
+    position: absolute;
+    width: 80%;
     margin: 2em 0;
+    bottom: 2em;
 }
 
 footer{
@@ -142,6 +148,89 @@ footer{
 footer p {
     text-align: center;
     color: #465e7c;
+}
+
+@media (max-width: 768px) and (min-width: 376px){
+
+    main{
+        display: block;
+    }
+    .seccion-principal{
+        margin: 2em 2em;
+        width: auto;
+    }
+    .input-texto{
+        height: 45vh;
+    }
+
+    .btn-primario{
+        width: 45%;
+    }
+    .btn-secundario{
+        width: 45%;
+    }
+
+    .seccion-resultado{
+        width: auto;
+        height: auto;
+    }
+    .seccion-resultado img{
+        display: none;
+    }
+
+    .mensaje{
+        position: relative;
+        margin: 2em 2em;
+        transform: translate(0, 0);
+    }
+
+    #btn-copiar{
+        position:static;
+        margin: 2em auto;
+        
+    }
+}
+
+@media (max-width: 376px){
+    main{
+        display: block;
+    }
+    .seccion-principal{
+        margin: 2em 2em;
+        width: auto;
+    }
+
+    .input-texto{
+        height: 45vh;
+    }
+
+    .btn-primario{
+        width: 80%;
+    }
+    .btn-secundario{
+        width: 80%;
+    }
+
+
+    .seccion-resultado{
+        width: auto;
+        height: auto;
+    }
+
+    .seccion-resultado img{
+        display: none;
+    }
+
+    .mensaje{
+        position: relative;
+        margin: 2em 0;
+        transform: translate(0, 0);
+    }
+
+    #btn-copiar{
+        position:static;
+        margin: 2em auto;
+    }
 }
 
 

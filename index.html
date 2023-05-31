@@ -28,19 +28,23 @@
                 </div>
 
                 <div class="botones">
-                    <button class="btn-primario">Encriptar</button>
-                    <button class="btn-secundario">Desencriptar</button>
+                    <button id="btn-encriptar" class="btn-primario">Encriptar</button>
+                    <button id="btn-desencriptar" class="btn-secundario">Desencriptar</button>
 
                 </div>
             </section>
             
             <section class="seccion-resultado">
-                    <img src="imagenes/Muñeco-mediano.png" alt="muñeco">
+                    
                     <div class="mensaje">
-                        <p class="no-encontrado">Ninguna clase fue encotrado</p>
-                        <p class="instrucciones">Ingresa el texto que desea encriptar o desencriptar</p>
+                        <img id="img-muñeco" src="imagenes/Muñeco-mediano.png" alt="muñeco">
+                        <p class="no-encontrado">Ningún mensaje fue encotrado</p>
+                        <p class="instrucciones">Ingresa el texto que desea encriptar o desencriptar </p>
                     </div>
-                    <button hidden id="btn-copiar" class="btn-secundario">Copiar</button>
+
+                    <p class="resultado">Este es un resultado</p>
+                    <button id="btn-copiar" class="btn-secundario">Copiar</button>
+                    
             </section>
         </main>
        
@@ -50,5 +54,5 @@
         </footer>
 
     </body>
-
+    <script src="./main.js"></script>
 </html>
