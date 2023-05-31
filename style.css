@@ -150,6 +150,17 @@ footer p {
     color: #465e7c;
 }
 
+@media (max-width: 965px){
+    .btn-primario{
+        width: 80%;
+        margin-right: 0;
+    }
+    .btn-secundario{
+        width: 80%;
+        margin-right: 0;
+    }
+}
+
 @media (max-width: 768px) and (min-width: 376px){
 
     main{
